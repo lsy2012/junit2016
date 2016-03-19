@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class Triangle {
 	public static double a,b,c;
-	public static void main(String arg[],double r) throws IOException{
+	public static void main(String arg[]) throws IOException{
 	try{
 	BufferedReader stdin=new BufferedReader(new InputStreamReader(System.in)); //接收键值
 	System.out.println("请输入:");
@@ -18,7 +18,7 @@ public class Triangle {
 	System.out.println("error");
 	System.exit(0);
 	}
-	r = Judge(a,b,c);
+	double r = Judge(a,b,c);
 	if(r == 0) 
 		System.out.println("不是三角形");
 	else if (r==1)
